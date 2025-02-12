@@ -12,6 +12,7 @@ def retrieve_demographic_info(data):
                     "Ethnicity": row[header.index('Ethnicity')]
                 }
                 print(f"Patient Demographics: {result}")
+                return
 
         print("Patient not found.")
     except KeyError as e:
